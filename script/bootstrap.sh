@@ -27,4 +27,9 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \\n    https://raw.githubuserco
 echo "Run this in vim to install all plugins:"
 echo "  :PlugInstall"
 
+export VER="0.36.0"
+cd /tmp/ \
+&& wget -O lazygit.tgz "https://github.com/jesseduffield/lazygit/releases/download/v${VER}/lazygit_${VER}_Linux_x86_64.tar.gz" \
+&& tar xvf lazygit.tgz && mv lazygit $HOME/bin/
+
 exit 0
