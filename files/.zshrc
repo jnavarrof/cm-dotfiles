@@ -136,4 +136,4 @@ source $HOME/.zshrc_functions
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Start Starship shell
-# eval "$(starship init zsh)
+eval "$(starship init zsh)"
