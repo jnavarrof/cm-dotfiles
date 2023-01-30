@@ -89,11 +89,8 @@ alias drm="docker rm -f"
 # Kubernetes
 alias k="kubectl"
 
-# Vagrant
-alias vu="vagrant up --parallel"
-alias vd="vagrant destroy --parallel"
-alias vdu="vd && vu"
-alias vp="vagrant provision"
+# Lazygit
+alias lz="lazygit"
 
 # Meraki
 alias s0='svn revert -R . && svn st | cut -d " " -f 8 | xargs rm -rf'
