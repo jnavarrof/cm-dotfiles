@@ -127,10 +127,10 @@ source $HOME/.asdf/asdf.sh
 export ASDF_DATA_DIR=${ASDF_DIR}
 
 # Source aliases
-source .zshrc_aliases
+source $HOME/.zshrc_aliases
 
 # Source functions
-source .zshrc_functions
+source $HOME/.zshrc_functions
 
 # load fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
