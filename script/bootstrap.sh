@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+# set -e
 
 # Create home/bin directory
 mkdir -p $HOME/bin
@@ -15,12 +15,16 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 # Install Starship
 # https://starship.rs/#quick-install
-curl -sS https://starship.rs/install.sh > $HOME/bin/install_startship.sh
-chmod +x $HOME/bin/install_startship.sh
-$HOME/bin/install_startship.sh -b $HOME/bin
-rm $HOME/bin/install_startship.sh
+curl -sS https://starship.rs/install.sh > $HOME/bin/install_startship.sh \
+&& chmod +x $HOME/bin/install_startship.sh \
+&& $HOME/bin/install_startship.sh -b $HOME/bin \
+&& rm $HOME/bin/install_startship.sh
 
 # Install asdf
 git clone https://github.com/asdf-vm/asdf.git $HOME/.asdf --branch v0.11.1
+
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \\n    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+echo "Run this in vim to install all plugins:"
+echo "  :PlugInstall"
 
 exit 0
