@@ -35,3 +35,6 @@ source .bashrc_functions
 # PS1/prompt
 # Built at https://bashrcgenerator.com/
 # export PS1="\[$(tput bold)\]\[\033[38;5;10m\]\u@\h\[$(tput sgr0)\]:\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;12m\]\w\[$(tput sgr0)\]\\$ \[$(tput sgr0)\]"
+
+# Run Starship
+# eval "$(starship init bash)"
