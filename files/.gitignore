@@ -2,3 +2,7 @@
 .idea
 /**/ansible/**/misc.yml
 .vscode
+**.vscode**
+**IDEA**
+**TODO**
+**.swp**
